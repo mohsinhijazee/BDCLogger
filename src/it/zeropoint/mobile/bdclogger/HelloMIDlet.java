@@ -31,6 +31,9 @@ public class HelloMIDlet extends MIDlet implements CommandListener {
     private StringItem stringItem;
     private ChoiceGroup choiceGroup3;
     private ChoiceGroup choiceGroup4;
+    private ChoiceGroup choiceGroup5;
+    private ChoiceGroup choiceGroup6;
+    private ChoiceGroup choiceGroup7;
     private SplashScreen splashScreen;
     private Form mainForm;
     private Ticker ticker;
@@ -168,7 +171,7 @@ public class HelloMIDlet extends MIDlet implements CommandListener {
     public Form getBdcForm() {
         if (bdcForm == null) {//GEN-END:|14-getter|0|14-preInit
             // write pre-init user code here
-            bdcForm = new Form("Welcome", new Item[] { getStringItem(), getChoiceGroup(), getChoiceGroup1(), getChoiceGroup2(), getChoiceGroup3(), getChoiceGroup4() });//GEN-BEGIN:|14-getter|1|14-postInit
+            bdcForm = new Form("Welcome", new Item[] { getStringItem(), getChoiceGroup(), getChoiceGroup1(), getChoiceGroup2(), getChoiceGroup3(), getChoiceGroup4(), getChoiceGroup5(), getChoiceGroup6(), getChoiceGroup7() });//GEN-BEGIN:|14-getter|1|14-postInit
             bdcForm.addCommand(getBackCommand());
             bdcForm.addCommand(getOkCommand());
             bdcForm.setCommandListener(this);//GEN-END:|14-getter|1|14-postInit
@@ -480,6 +483,84 @@ public class HelloMIDlet extends MIDlet implements CommandListener {
         // write post-action user code here
     }//GEN-BEGIN:|80-entry|2|
     //</editor-fold>//GEN-END:|80-entry|2|
+
+    //<editor-fold defaultstate="collapsed" desc=" Generated Getter: choiceGroup5 ">//GEN-BEGIN:|84-getter|0|84-preInit
+    /**
+     * Returns an initiliazed instance of choiceGroup5 component.
+     * @return the initialized component instance
+     */
+    public ChoiceGroup getChoiceGroup5() {
+        if (choiceGroup5 == null) {//GEN-END:|84-getter|0|84-preInit
+            // write pre-init user code here
+            choiceGroup5 = new ChoiceGroup("06. Low self-esteem", Choice.EXCLUSIVE);//GEN-BEGIN:|84-getter|1|84-postInit
+            choiceGroup5.append("Not At All", null);
+            choiceGroup5.append("Somewhat", null);
+            choiceGroup5.append("Moderately", null);
+            choiceGroup5.append("A Lot", null);
+            choiceGroup5.append("Exteremely", null);
+            choiceGroup5.setSelectedFlags(new boolean[] { false, false, false, false, false });
+            choiceGroup5.setFont(0, null);
+            choiceGroup5.setFont(1, null);
+            choiceGroup5.setFont(2, null);
+            choiceGroup5.setFont(3, null);
+            choiceGroup5.setFont(4, null);//GEN-END:|84-getter|1|84-postInit
+            // write post-init user code here
+        }//GEN-BEGIN:|84-getter|2|
+        return choiceGroup5;
+    }
+    //</editor-fold>//GEN-END:|84-getter|2|
+
+    //<editor-fold defaultstate="collapsed" desc=" Generated Getter: choiceGroup6 ">//GEN-BEGIN:|90-getter|0|90-preInit
+    /**
+     * Returns an initiliazed instance of choiceGroup6 component.
+     * @return the initialized component instance
+     */
+    public ChoiceGroup getChoiceGroup6() {
+        if (choiceGroup6 == null) {//GEN-END:|90-getter|0|90-preInit
+            // write pre-init user code here
+            choiceGroup6 = new ChoiceGroup("07. Feeling worthless or inadequate", Choice.EXCLUSIVE);//GEN-BEGIN:|90-getter|1|90-postInit
+            choiceGroup6.append("Not At All", null);
+            choiceGroup6.append("Somewhat", null);
+            choiceGroup6.append("Moderately", null);
+            choiceGroup6.append("A Lot", null);
+            choiceGroup6.append("Exteremely", null);
+            choiceGroup6.setSelectedFlags(new boolean[] { false, false, false, false, false });
+            choiceGroup6.setFont(0, null);
+            choiceGroup6.setFont(1, null);
+            choiceGroup6.setFont(2, null);
+            choiceGroup6.setFont(3, null);
+            choiceGroup6.setFont(4, null);//GEN-END:|90-getter|1|90-postInit
+            // write post-init user code here
+        }//GEN-BEGIN:|90-getter|2|
+        return choiceGroup6;
+    }
+    //</editor-fold>//GEN-END:|90-getter|2|
+
+    //<editor-fold defaultstate="collapsed" desc=" Generated Getter: choiceGroup7 ">//GEN-BEGIN:|96-getter|0|96-preInit
+    /**
+     * Returns an initiliazed instance of choiceGroup7 component.
+     * @return the initialized component instance
+     */
+    public ChoiceGroup getChoiceGroup7() {
+        if (choiceGroup7 == null) {//GEN-END:|96-getter|0|96-preInit
+            // write pre-init user code here
+            choiceGroup7 = new ChoiceGroup("08. Guilt or shame", Choice.EXCLUSIVE);//GEN-BEGIN:|96-getter|1|96-postInit
+            choiceGroup7.append("Not At All", null);
+            choiceGroup7.append("Somewhat", null);
+            choiceGroup7.append("Moderately", null);
+            choiceGroup7.append("A Lot", null);
+            choiceGroup7.append("Exteremely", null);
+            choiceGroup7.setSelectedFlags(new boolean[] { false, false, false, false, false });
+            choiceGroup7.setFont(0, null);
+            choiceGroup7.setFont(1, null);
+            choiceGroup7.setFont(2, null);
+            choiceGroup7.setFont(3, null);
+            choiceGroup7.setFont(4, null);//GEN-END:|96-getter|1|96-postInit
+            // write post-init user code here
+        }//GEN-BEGIN:|96-getter|2|
+        return choiceGroup7;
+    }
+    //</editor-fold>//GEN-END:|96-getter|2|
 
     /**
      * Returns a display instance.
